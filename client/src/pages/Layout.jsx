@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { dummyUserData } from '../assets/assets'
 import Sidebar from '../components/Sidebar'
-import Loding from '../components/Loding'
+import Loading from '../components/Loading'
 
 const Layout = () => {
     const user = dummyUserData
@@ -23,7 +23,7 @@ const Layout = () => {
             }
         </div>
     ) : (
-        <Loding />
+        <Loading />
     )
 }
 
